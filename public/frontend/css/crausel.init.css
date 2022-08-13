@@ -1,0 +1,66 @@
+.testi-crausel-main .testi-card .box {
+    transition: all 0.3s ease;
+    height: 215px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.testi-dp-main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.testi-dp{
+    height: 215px;
+    width: 215px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 2px solid var(--primary);
+}
+.testi-carousel-img img {
+    width: 100%;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+.quote{
+    background: var(--primary);
+}
+
+@media screen and (max-width:768px) {
+    .testi-crausel-main .carousel .testi-card .box {
+        height: fit-content;
+    }
+    .testi-dp{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid var(--primary) !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: var(--primary) !important;
+}
